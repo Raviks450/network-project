@@ -1,4 +1,3 @@
-variable "project-id" {}
 resource "google_compute_network" "vpc" {
   project                 = var.project-id
   name                    = "my-vpc"
