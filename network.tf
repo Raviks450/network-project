@@ -1,3 +1,9 @@
+provider "google" {
+    project = var.projectid
+    region = "us-central1"
+credentials = var.google_creds
+}
+
 resource "google_compute_network" "vpc" {
   project                 = var.project-id
   name                    = "my-vpc"
